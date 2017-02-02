@@ -1,0 +1,50 @@
+<html>
+<head>
+<TITLE>Praktikum Web-Technologien (SS99): Zellularautomat</TITLE>
+<META NAME="author" CONTENT="Juergen Pahle">
+</head>
+<body>
+<IMG ALIGN="RIGHT" ALT="Bild: jCell.gif" SRC="classes/jCell.gif" HEIGHT=100 WIDTH=100>
+<H1>ZELLULARAUTOMAT: <EM>jCell</EM></H1>
+<P>
+Ein Zellularautomat besteht aus einem regelm&auml;&szlig;igen Raster, in dem viele gleichartige Zellen angeordnet sind. Jede einzelne Zelle stellt dabei einen eigenst&auml;ndigen endlichen Automaten dar. Dieser &auml;ndert seinen Zustand abh&auml;ngig davon, in welchen Zust&auml;nden sich benachbarte Zellen befinden. D.h. global gesehen wird f&uuml;r Berechnungen nur lokal verf&uuml;gbare Information herangezogen. Dieses von der Biologie inspirierte Modell f&uuml;r massiv parallele Berechnungen ist insbesondere mindestens turing-m&auml;chtig und kann sogar als Basis f&uuml;r selbstreproduzierende Strukturen dienen. Praktische Anwendungen von Zellularautomaten reichen von der Stauforschung bis hin zu Simulationen von chemischen oder physikalischen Reaktionen.</P>
+<P>
+Aufgabe dieses Projektes war es, einen Simulator f&uuml;r Zellularautomaten zu entwerfen. Dieser sollte auf Java basierend &uuml;ber das Web erreichbar sein und dem interessierten Anf&auml;nger eine einfach zu bedienende Umgebung zur Erforschung von Zellularautomaten bieten. Andererseits sollte das zu entwerfende System flexibel genug sein, um sp&auml;tere Erweiterungen zuzulassen.</P>
+<P>
+Bei der Implementierung wurde kein gro&szlig;er Wert auf Geschwindigkeit gelegt. Der Schwerpunkt lag auf der einfachen und intuitiven Bedienbarkeit.
+</P>
+<HR>
+Mit diesem Button wird das Programm <EM>jCell</EM> gestartet:
+<APPLET  ALT="Applet: jCell.Simulator" CODEBASE="classes" CODE="jCell.Simulator.class" HEIGHT=30 WIDTH=250>
+Leider unterst&uuml;tzt Ihr Browser kein Java 1.1! Das Applet kann nicht ausgef&uuml;hrt werden.
+</APPLET>
+
+<HR>
+<H2>Zur Bedienung:</H2>
+<P>
+Das Programm jCell kann sowohl als Application, als auch als Applet aufgerufen werden. Die Startklasse ist <LISTING>Simulator.class</LISTING>
+Beim Aufruf als Applet wird zuerst ein Startknopf angezeigt. Durch Anklicken dieses Knopfes wird ein Kontrollfenster ge&ouml;ffnet, das alle notwendigen Bedienelemente beinhaltet. Dieses Kontrollfenster erscheint beim Aufruf als Application sofort. Das Programm nimmt keine Kommandozeilenparameter entgegen.<BR>
+Ein angezeigtes Kontrollfenster teilt sich in f&uuml;nf Bereiche:
+<OL type=i>
+<LI>Eine Reihe Buttons ganz oben.</LI>
+<LI>Ein Bereich in dem Berechnungsvorg&auml;nge gestartet werden k&ouml;nnen.</LI>
+<LI>Ein Bereich, in dem Informationen f&uuml;r den Benutzer angezeigt werden.</LI>
+<LI>Ein Panel zum Neuinitialisieren des ZA und zum Einstellen einer Verz&ouml;gerung der graphischen Ausgabe.</LI>
+<LI>Ein Textfeld ganz unten, in dem Meldungen &uuml;ber Aktionen des Benutzers bzw. &uuml;ber Fehler ausgegeben werden.</LI>
+</OL>
+Anfangs ist nur der Load-Button, der New-Button und der Exit-Button aktiviert. Mit dem Exit-Button kann das Programm jederzeit beendet werden. Der Load-Button verursacht ein Laden eines Zellularautomaten aus einer Datei. Bei der Ausf&uuml;hrung von <EM>jCell</EM> innerhalb eines Browsers ist dieser Button wegen Sicherheitsrestriktionen nicht aktiv! Mit dem New-Button kann ein neuer Zellularautomat erzeugt werden. Wurde ein Zellularautomat erfolgreich geladen oder erzeugt, so werden die &uuml;brigen Buttons aktiv. Beim Anklicken des Buttons "Show" wird der aktuelle Zustand des Zellularautomaten in einem eigenen Fenster graphisch dargestellt. Der Show-Button wird dadurch zum Hide-Button, mit dessen Hilfe die graphische Ausgabe wieder beendet werden kann. Die Zust&auml;nde der Zellen des Zellularautomaten k&ouml;nnen auf einfache Weise ver&auml;ndert werden, indem man die entsprechende Zelle in der graphischen Ausgabe anklickt. Dabei werden alle m&ouml;glichen Zust&auml;nde  zyklisch durchlaufen. Man kann aber auch mit dem Reset-Button alle Zust&auml;nde im Zellularautomat auf Null setzen oder mit dem Random-Button alle Zust&auml;nde auf zuf&auml;llige Werte setzen. Ist der angezeigte Bereich kleiner als der ganze Zellenraum, kann man mit den entsprechenden Scrollbars die Anzeige verschieben. Mit dem Save-Button wird der aktuelle Zellularautomat in einer Datei abgespeichert. Dieser Save-Button ist wie der Load-Button bei der Ausf&uuml;hrung als Applet nicht aktiviert.<BR>
+Die eigentliche Berechnung wird durch die Buttons "Run" und "Step" angesto&szlig;en. Mit "Step" wird genau ein &Uuml;bergang berechnet. Durch Dr&uuml;cken des Buttons "Run" wird die im Textfeld "Steps" angegebene Anzahl von &Uuml;berg&auml;ngen abgearbeitet. Das Anklicken des Buttons "Stop" h&auml;lt den Berechnungsvorgang an. Der Z&auml;hler der jeden durchgef&uuml;hrten &Uuml;bergang mitz&auml;hlt, wird durch Bet&auml;tigen des Buttons "Reset Counter" auf Null zur&uuml;ckgesetzt. M&ouml;chte man einen Zellularautomaten ver&auml;ndern, so kann man dazu mit Hilfe des Edit-Button ein entsprechendes Fenster &ouml;ffnen.
+</P>
+<HR>
+<P>
+<H2>Angaben zum Programm:</H2>
+Das Programm <EM>jCell</EM> besteht aus ca. 2400 Zeilen Quellcode. Das entspricht ungef&auml;hr 64 KByte. Die Entwicklungszeit betrug ca. 2 bis 3 Wochen. Auf einen modularen Entwurf wurde Wert gelegt, um sp&auml;tere Erweiterungen zuzulassen. Denkbar w&auml;re z.B. eine leistungsf&auml;hige M&ouml;glichkeit Zellularautomaten in einer Art Programmiersprache in einer Datei zu definieren oder geladene Zellularautomaten zu editieren.<BR>
+Die <A HREF="doc/Package-jCell.html">Programmdokumentation</A> ist hier einsehbar.<BR>
+Das System <EM>jCell</EM> ist auch als <A HREF="../jCell.tar.gz">gepacktes Tar-Archiv</A> downloadbar.<BR>
+Bitte beachten sie die in der Datei COPYRIGHT angegebenen rechtlichen Bestimmungen zur Benutzung und Weitergabe dieses Programmes.</P>
+<HR>
+<ADDRESS><A HREF="mailto: jCell@pahle.de"> Mail an den Autor J. Pahle, Universit&auml;t Karlsruhe, E-Post: jCell@pahle.de</A><BR>
+Letzte &Auml;nderung am 17. August, 1999, Version 0.99</ADDRESS><BR>
+Copyright &copy; by J. Pahle 1999. Alle Rechte vorbehalten.
+</body>
+</html>
