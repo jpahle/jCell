@@ -20,7 +20,7 @@ Leider unterstützt Ihr Browser kein Java 1.1! Das Applet kann nicht ausgeführt
 
 Das Programm jCell kann sowohl als Application, als auch als Applet aufgerufen werden. Die Startklasse ist
 
-    `Simulator.class`
+    Simulator.class
 
 Beim Aufruf als Applet wird zuerst ein Startknopf angezeigt. Durch Anklicken dieses Knopfes wird ein Kontrollfenster geöffnet, das alle notwendigen Bedienelemente beinhaltet. Dieses Kontrollfenster erscheint beim Aufruf als Application sofort. Das Programm nimmt keine Kommandozeilenparameter entgegen.  
 Ein angezeigtes Kontrollfenster teilt sich in fünf Bereiche:
@@ -41,8 +41,8 @@ Die eigentliche Berechnung wird durch die Buttons "Run" und "Step" angestoßen. 
 ## Angaben zum Programm:
 
 Das Programm *jCell* besteht aus ca. 2400 Zeilen Quellcode. Das entspricht ungefähr 64 KByte. Die Entwicklungszeit betrug ca. 2 bis 3 Wochen. Auf einen modularen Entwurf wurde Wert gelegt, um spätere Erweiterungen zuzulassen. Denkbar wäre z.B. eine leistungsfähige Möglichkeit Zellularautomaten in einer Art Programmiersprache in einer Datei zu definieren oder geladene Zellularautomaten zu editieren.  
-Die [Programmdokumentation](doc/Package-jCell.html) ist hier einsehbar.  
-Das System *jCell* ist auch als [gepacktes Tar-Archiv](../jCell.tar.gz) downloadbar.  
+Die [Programmdokumentation](https://jpahle.github.io/jCell/doc/Package-jCell.html) ist hier einsehbar.  
+Das System *jCell* ist auch als [gepacktes zip-Archiv](https://github.com/jpahle/jCell/archive/master.zip) downloadbar.  
 Bitte beachten sie die in den Dateien LICENSE und COPYRIGHT angegebenen rechtlichen Bestimmungen zur Benutzung und Weitergabe dieses Programmes.
 
 ***
