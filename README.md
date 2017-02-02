@@ -9,16 +9,13 @@ Aufgabe dieses Projektes war es, einen Simulator für Zellularautomaten zu entwe
 Bei der Implementierung wurde kein großer Wert auf Geschwindigkeit gelegt. Der Schwerpunkt lag auf der einfachen und intuitiven Bedienbarkeit.
 
 ***
-Mit diesem Button wird das Programm *jCell* gestartet:
-<APPLET  ALT="Applet: jCell.Simulator" CODEBASE="classes" CODE="jCell.Simulator.class" HEIGHT=30 WIDTH=250>
-Leider unterstützt Ihr Browser kein Java 1.1! Das Applet kann nicht ausgeführt werden.
-</APPLET>
+Das Applet *jCell* kann auf [jpahle.github.io/jCell](https://jpahle.github.io/jCell) ausprobiert werden.
 
 ***
 
 ## Zur Bedienung:
 
-Das Programm jCell kann sowohl als Application, als auch als Applet aufgerufen werden. Die Startklasse ist
+Das Programm *jCell* kann sowohl als Application, als auch als Applet aufgerufen werden. Die Startklasse ist
 
     Simulator.class
 
