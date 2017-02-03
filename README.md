@@ -39,7 +39,7 @@ Die eigentliche Berechnung wird durch die Buttons "Run" und "Step" angestoßen. 
 
 Das Programm *jCell* besteht aus ca. 2400 Zeilen Quellcode. Das entspricht ungefähr 64 KByte. Die Entwicklungszeit betrug ca. 2 bis 3 Wochen. Auf einen modularen Entwurf wurde Wert gelegt, um spätere Erweiterungen zuzulassen. Denkbar wäre z.B. eine leistungsfähige Möglichkeit Zellularautomaten in einer Art Programmiersprache in einer Datei zu definieren oder geladene Zellularautomaten zu editieren.  
 Die [Programmdokumentation](https://jpahle.github.io/jCell/doc/Package-jCell.html) ist hier einsehbar.  
-Das System *jCell* ist auch als [gepacktes zip-Archiv](https://github.com/jpahle/jCell/archive/master.zip) downloadbar.  
+Das System *jCell* ist auch als [zip-Archiv](https://github.com/jpahle/jCell/archive/master.zip) downloadbar.  
 Bitte beachten sie die in den Dateien LICENSE und COPYRIGHT angegebenen rechtlichen Bestimmungen zur Benutzung und Weitergabe dieses Programmes.
 
 ***
